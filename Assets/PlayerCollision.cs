@@ -8,16 +8,29 @@ public class PlayerCollision : MonoBehaviour
     [SerializeField] ScoreData scoreData;
     [SerializeField] int startWater;
 
-    private void Start()
-    {
-        scoreData.InitScoreValue(startWater);
-    }
+   
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<ICollectible>() != null)
+        ICollectible iCollect = other.GetComponent<ICollectible>();
+        if (iCollect != null)
         {
-            other.GetComponent<ICollectible>().Collect();
+            iCollect.Collect();
+        }
+
+        ITalking talking = other.GetComponent<ITalking>();
+        if(talking != null)
+        {
+            talking.Talk();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        ITalking talking = collision.gameObject.GetComponent<ITalking>();
+        if (talking != null)
+        {
+            talking.Talk();
         }
     }
 }

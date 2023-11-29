@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca2dab666e5ed3408952e6692f23bce, type: 3}
+  m_Name: FlowersQuest
+  m_EditorClassIdentifier: 
+  Objectives:
+  - {fileID: 11400000, guid: e1658af4f36fec24ea6d66bfdda8cd1c, type: 2}
+  - {fileID: 11400000, guid: 1d2fb049a137ce343a52458df199e2f9, type: 2}
+  - {fileID: 11400000, guid: aae2ae28ee9e62342bf89960a4e2c49c, type: 2}
+  IsStarted: 0
+  IsFinished: 1

@@ -10,7 +10,7 @@ public class ScoreData : ScriptableObject
     public int ScoreValue;
 
     public delegate void ScoreUpdate(int value);
-    public static event ScoreUpdate OnUpdate;
+    public static event ScoreUpdate OnUpdate; 
 
     public void UpdateScoreValue(int value)
     {
@@ -24,7 +24,7 @@ public class ScoreData : ScriptableObject
         UpdateScoreUI();
     }
 
-    private void UpdateScoreUI()
+    public void UpdateScoreUI()
     {
         OnUpdate?.Invoke(ScoreValue);
     }

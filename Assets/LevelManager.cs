@@ -6,9 +6,4 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private ScoreData _scoreData;
 
-    private void Start()
-    {
-        _scoreData.InitScoreValue(0);
-    }
-
 }

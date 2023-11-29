@@ -7,6 +7,7 @@ public class LevelTransport : MonoBehaviour
 {
 
     public string sceneToLoad;
+    private ScoreData _scoreData;
 
     private void OnTriggerEnter(Collider other)
     {

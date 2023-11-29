@@ -6,12 +6,18 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _rb;
     [SerializeField] private float _speed;
+    [SerializeField] private ScoreData _score;
 
 
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+    }
+    void Start()
+    {
+        _score.InitScoreValue(_score.ScoreValue); 
     }
 
     // Update is called once per frame

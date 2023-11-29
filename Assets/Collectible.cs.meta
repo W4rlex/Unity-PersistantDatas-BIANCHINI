@@ -3,7 +3,9 @@ guid: 898a1852c0e0fa249acdf53eecca0452
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _scoreData: {fileID: 11400000, guid: a76b547120d379b46a8ea4a78e79199d, type: 2}
+  - _questData: {fileID: 11400000, guid: 4a45a19e71bfea443b53c896a57e8afe, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
